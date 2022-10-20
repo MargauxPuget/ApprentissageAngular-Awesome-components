@@ -9,6 +9,8 @@ import { MatToolbarModule } from '@angular/material/toolbar'
     CommonModule
   ],
   exports: [
+    // ici il est inutile d'import MatToolbarModule car SharedModule n'en a pas besoin,
+    // parcontre il doit le mettre à disposition des autres Modules donc on ne fait que l'exporter
     MatToolbarModule
   ]
 })
