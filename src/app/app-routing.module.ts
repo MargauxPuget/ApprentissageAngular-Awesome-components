@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   { path: 'social-media', loadChildren: () => import('./social-media/social-media.module').then(m => m.SocialMediaModule)},
+  // c'est une route wildCard qui  redirige toute route non reconnue.
   { path: '**', redirectTo: 'social-media'}
 ];
 
